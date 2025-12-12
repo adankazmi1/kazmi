@@ -56,13 +56,10 @@ input, select, textarea {
 html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
 
-/* Keep body as fallback color */
+/* Body */
 body {
     background: #1b1f22;
 }
-
-
-
 body.is-preload *,
 body.is-preload *:before,
 body.is-preload *:after {
@@ -174,8 +171,3 @@ hr {
 /* Form */
 form { margin: 0 0 2rem 0; }
 form > :last-child { margin-bottom: 0; }
-
-
-
-
-
