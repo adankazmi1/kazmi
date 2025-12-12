@@ -58,9 +58,19 @@ html { box-sizing: border-box; }
 
 /* Body */
 body {
-    /* background: #1b1f22; */ /* remove or comment this line */
-    background: url('bg.png') no-repeat center center fixed;
+    /* fallback color if image doesn't load */
+    background: #1b1f22; 
+}
+
+/* Update the background div */
+#bg:after {
+    background-image: url('images/bg.png'); /* path to your image */
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 }
 
 body.is-preload *,
@@ -174,4 +184,5 @@ hr {
 /* Form */
 form { margin: 0 0 2rem 0; }
 form > :last-child { margin-bottom: 0; }
+
 
