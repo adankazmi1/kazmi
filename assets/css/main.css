@@ -57,18 +57,21 @@ html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
 
 /* Body */
-body {
-    /* fallback color if image doesn't load */
-    background: #1b1f22; 
-}
-
-/* Update the background div */
+/* #bg is the template's background element */
 #bg:after {
-    background-image: url('images/bg.png'); /* path to your image */
+    /* set your GitHub-hosted image here */
+    background-image: url('images/bg.png'); /* adjust path if needed */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 1;
 }
+
+/* you can keep the body color as a fallback */
+body {
+    background: #1b1f22;
+}
+
 
 
 }
@@ -184,5 +187,6 @@ hr {
 /* Form */
 form { margin: 0 0 2rem 0; }
 form > :last-child { margin-bottom: 0; }
+
 
 
