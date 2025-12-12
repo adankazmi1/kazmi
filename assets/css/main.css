@@ -58,8 +58,11 @@ html { box-sizing: border-box; }
 
 /* Body */
 body {
-    background: #1b1f22;
+    /* background: #1b1f22; */ /* remove or comment this line */
+    background: url('bg.png') no-repeat center center fixed;
+    background-size: cover;
 }
+
 body.is-preload *,
 body.is-preload *:before,
 body.is-preload *:after {
@@ -171,3 +174,4 @@ hr {
 /* Form */
 form { margin: 0 0 2rem 0; }
 form > :last-child { margin-bottom: 0; }
+
